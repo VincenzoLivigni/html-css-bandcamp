@@ -1,5 +1,4 @@
 /* generics */
-
 * {margin: 0;
    padding: 0;
    box-sizing: border-box;}
@@ -16,10 +15,28 @@
  .flex {display: flex;}
 
  /* header utils */
- .header-top {height: 56px;
-              background-color: var(--camp-primary);}
+ .navbar-dark {height: 56px;
+               background-color: var(--camp-primary);
+               padding: 1rem 2rem;
+               align-items: center;
+               justify-content: space-between; }
 
-.header-bottom {height: 56px;
+.fa-magnifying-glass {width: 2rem;
+                      background-color: #464646;
+                      color: #9d9d9d;
+                      line-height: 2rem;
+                      margin-left: 1rem;}
+            
+.navbar-dark input {background-color: #464646;
+                    color: #9d9d9d;
+                    border: none;
+                    width: 250px; }
+
+.dark-right a {color: white;
+               text-decoration: none;
+               margin-left: 1.5rem;}
+
+.navbar-light {height: 56px;
                 background-color: var(--camp-secondary);}
 
 /* main utils */
@@ -33,18 +50,16 @@
 .albums {width: calc(100% / 4);
          height: 300px;
          background-color: azure;
-         padding: 0.5rem;
-         }
+         padding: 0.5rem;}
 
 .album-top {height: 70%;
             border: 1px dashed black;
-            background-color: aquamarine;
-}
+            background-color: aquamarine;}
 
 .album-bottom {height: 30%;
                background-color: aqua;}
 
-.right {width: 30%;
+aside {width: 30%;
        background-color: orange;
        height: 100%;
        overflow-y: scroll;}
