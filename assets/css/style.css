@@ -1,0 +1,57 @@
+/* generics */
+
+* {margin: 0;
+   padding: 0;
+   box-sizing: border-box;}
+
+:root {--camp-primary: #222222;
+       --camp-secondary: #464646;
+       --camp-light: #9d9d9d;
+       --camp-white: #ffffff;}
+
+ /* utils */
+ .wrapper {height: 100vh;
+           overflow: hidden;}
+
+ .flex {display: flex;}
+
+ /* header utils */
+ .header-top {height: 56px;
+              background-color: var(--camp-primary);}
+
+.header-bottom {height: 56px;
+                background-color: var(--camp-secondary);}
+
+/* main utils */
+.left {width: 70%;
+       background-color: orangered;
+       height: 100%;
+       overflow-y: auto;
+       flex-wrap: wrap;
+       padding: 1rem;}
+
+.albums {width: calc(100% / 4);
+         height: 300px;
+         background-color: azure;
+         padding: 0.5rem;
+         }
+
+.album-top {height: 70%;
+            border: 1px dashed black;
+            background-color: aquamarine;
+}
+
+.album-bottom {height: 30%;
+               background-color: aqua;}
+
+.right {width: 30%;
+       background-color: orange;
+       height: 100%;
+       overflow-y: scroll;}
+
+/* header */
+header {height: 112px;}
+
+ /* main */
+main {height: calc(100% - 112px);}
+
