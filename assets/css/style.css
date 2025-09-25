@@ -128,3 +128,26 @@ aside {width: 30%;
        overflow-y: scroll;
        padding: 1rem;}
 
+
+/* tablet */
+
+@media screen and (max-width: 744px) {
+       .left {width: 65%;}
+
+       aside {width: 35%;}
+
+       .albums {width: calc(100% / 2);}
+
+       .album-bottom {font-size: 0.9rem;}
+
+       aside span {font-size: 0.8rem;}
+
+       .artist {flex-wrap: wrap;}
+
+       .artist-left {margin-bottom: 1rem;}
+
+       .artist-left span {margin-top: 0.4rem}
+
+       .artist-right {width: 100%;}
+
+}
