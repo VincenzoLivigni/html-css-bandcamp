@@ -84,10 +84,26 @@ input {
        gap: 1rem;
 }
 
+.sing-up,
+.log-in {
+       display: inline-block;
+       height: 60px;
+       line-height: 60px;
+       padding: 0 1rem;
+}
+
+.sing-up:hover,
+.log-in:hover {
+       background-color: #464646;
+}
+
 .dark-right a {
        color: var(--camp-white);
        text-decoration: none;
-       margin-left: 1.5rem;
+}
+
+.dark-right a:hover {
+       text-decoration: underline;
 }
 
 /* navbar-light */
@@ -115,6 +131,8 @@ input {
        overflow-y: auto;
        flex-wrap: wrap;
        padding: 1rem 1rem 1rem 1.5rem;
+       scrollbar-width: auto;
+       scrollbar-color: var(--camp-dark) var(--camp-primary);
 }
 
 .albums {
@@ -124,7 +142,33 @@ input {
 
 .album-top {
        margin-bottom: 0.5rem;
+       position: relative;
 }
+
+.icona {
+       position: absolute;
+       top: 75%;
+       font-size: 30px;
+       color: var(--camp-light);
+       display: none;
+}
+
+.album-top img:hover {
+       border: none
+}
+
+.album-top:hover .icona {
+       display: block;
+}
+
+.album-top:hover .icona:hover {
+       color: var(--camp-white);
+}
+
+.album-top:hover .icona:hover~img {
+       border: none;
+}
+
 
 .album-bottom {
        height: 30%;
@@ -143,7 +187,8 @@ input {
        color: var(--camp-white);
 }
 
-aside span {font-size: 0.9rem;
+aside span {
+       font-size: 0.9rem;
        display: block;
        color: var(--camp-white);
 }
@@ -160,6 +205,19 @@ aside span {font-size: 0.9rem;
        color: var(--camp-white);
        border-color: var(--camp-white);
        margin-bottom: 1.5rem;
+}
+
+button:hover {
+       text-decoration: underline;
+       background-color: #dedede;
+}
+
+.button-dark:hover {
+       background-color: var(--camp-dark);
+}
+
+.button-artist:hover {
+       background-color: var(--camp-dark);
 }
 
 .artist {
@@ -194,6 +252,8 @@ aside {
        height: 100%;
        overflow-y: scroll;
        padding: 1rem;
+       scrollbar-width: auto;
+       scrollbar-color: var(--camp-dark) var(--camp-primary);
 }
 
 
@@ -220,7 +280,9 @@ aside {
               font-size: 0.8rem;
        }
 
-       .player {font-size: 70px;}
+       .player {
+              font-size: 70px;
+       }
 
        .artist {
               flex-wrap: wrap;
