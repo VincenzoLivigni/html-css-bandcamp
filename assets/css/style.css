@@ -89,7 +89,7 @@ input {
        display: inline-block;
        height: 60px;
        line-height: 60px;
-       padding: 0 1rem;
+       padding: 0 0.75rem;
 }
 
 .sing-up:hover,
