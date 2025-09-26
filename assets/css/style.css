@@ -187,6 +187,12 @@ input {
        color: var(--camp-white);
 }
 
+.cut { white-space: nowrap;
+       max-width: 80%;
+       overflow: hidden;
+       text-overflow: ellipsis;
+       }
+
 aside span {
        font-size: 0.9rem;
        display: block;
@@ -256,6 +262,51 @@ aside {
        scrollbar-color: var(--camp-dark) var(--camp-primary);
 }
 
+/* laptop */
+@media screen and (max-width: 1024px) {
+       .albums {
+              width: calc(100% / 3);
+       }
+
+       .album-bottom {
+              font-size: 0.9rem;
+       }
+
+       .cut {width: 50%;}
+
+       aside span {
+              font-size: 0.8rem;
+       }
+
+       .player {
+              font-size: 60px;
+       }
+
+       .artist {
+              flex-wrap: wrap;
+       }
+
+       .name-artist {
+              line-height: 20px
+       }
+
+       .artist-left {
+              margin-bottom: 1rem;
+       }
+
+       .artist-right {
+              width: 100%;
+       }
+
+       .dark-left input {
+              width: 200px;
+       }
+
+       .navbar-light-content {
+              width: 380px;
+       }
+
+}
 
 /* tablet */
 
@@ -281,8 +332,10 @@ aside {
        }
 
        .player {
-              font-size: 70px;
+              font-size: 60px;
        }
+
+       .cut {width: 40%;}
 
        .artist {
               flex-wrap: wrap;
